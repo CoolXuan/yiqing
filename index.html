@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/epidemic.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>疫情数据统计</title>
+</head>
+<script async>
+  function resize() {
+    var herowidth = 1000; //改为你要的网页宽度
+    var heroheight = 300; //改为你要的网页高度
+    window.resizeTo(herowidth, heroheight);
+  }
+  resize()
+</script>
+
+<body onresize=resize()>
+  <div id="app"></div>
+
+  <script type="module" src="/src/main.ts"></script>
+  <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4opqpwK37fXjBuEStHndw45eWLuf8w6F"></script> -->
+  <!-- <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script> -->
+  <script language="javascript" type="text/javascript" src="http://fw.qq.com/ipaddress">
+   
+  </script>
+  <!-- <script type="text/javascript">
+    // console.log(returnCitySN["cip"] + ',' + returnCitySN["cname"])
+    var value = returnCitySN["cip"] || '';
+    var name = 'o-cip';
+    if (typeof value === typeof {}) value = JSON.stringify(value);
+    window.localStorage.setItem(name, value);
+    var value1 = returnCitySN["cname"] || '';
+    var name1 = 'o-cname';
+    if (typeof value1 === typeof {}) value1 = JSON.stringify(value1);
+    window.localStorage.setItem(name1, value1)
+    window.initNECaptcha = initNECaptcha
+  </script> -->
+</body>
+
+</html>
